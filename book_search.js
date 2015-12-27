@@ -60,21 +60,21 @@ function showBooks(ajax) {
         $("books").appendChild(li);
     }
 }
-function showBooks(ajax) {
-    // clear out the list of categories
-    while ($("books").firstChild) {
-        $("books").removeChild($("books").firstChild);
-    }
+//function showBooks(ajax) {
+    //// clear out the list of categories
+    //while ($("books").firstChild) {
+        //$("books").removeChild($("books").firstChild);
+    //}
     
-    // add all books from the XML to the page's bulleted list
-    var data = JSON.parse(ajax.responseText);
-    for (var i = 0; i < data.books.length; i++) {
-        var title  = data.books[i].title;
-        var author = data.books[i].author;
-        var year = data.books[i].year;
+    //// add all books from the XML to the page's bulleted list
+    //var data = JSON.parse(ajax.responseText);
+    //for (var i = 0; i < data.books.length; i++) {
+        //var title  = data.books[i].title;
+        //var author = data.books[i].author;
+        //var year = data.books[i].year;
         
-        var li = document.createElement("li");
-        li.innerHTML = title + ", by " + author + " (" + year + ")";
-        $("books").appendChild(li);
-    }
-}
+        //var li = document.createElement("li");
+        //li.innerHTML = title + ", by " + author + " (" + year + ")";
+        //$("books").appendChild(li);
+    //}
+//}
